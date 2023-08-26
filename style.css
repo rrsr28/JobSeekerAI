@@ -1,0 +1,102 @@
+/* Import the custom font */
+@font-face {
+  font-family: "CustomFont"; /* Use the desired font name */
+  src: url("fonts/your-font-file.ttf") format("truetype"); /* Adjust the path and format */
+}
+
+/* Apply the custom font to specific elements */
+.frame p {
+  font-family: "CustomFont", sans-serif; /* Use the font name you defined */
+}
+
+.button a {
+  font-family: "CustomFont", sans-serif; /* Use the font name you defined */
+}
+
+
+.hero {
+    box-sizing: border-box;
+    flex-shrink: 0;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 100px 100px 100px;
+    background-color: #023e8a;
+    overflow: hidden;
+    position: relative;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 0;
+    border-radius: 0px 0px 0px 0px;
+  }
+  
+  /* Styles for the content within the hero section */
+  .frame {
+    flex-shrink: 0;
+    width: auto;
+    height: auto;
+    white-space: pre;
+    position: relative;
+    line-height: 1.2;
+  }
+  
+  .a-i-powered-job-nirvana {
+    flex-shrink: 0;
+    width: 100%;
+    height: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-word;
+    max-width: 800px;
+    overflow: visible;
+    position: relative;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Staatliches", sans-serif;
+    color: #90e0ef;
+    font-size: 80px;
+    letter-spacing: 0em;
+    line-height: 1.1;
+    text-align: center;
+  }
+  
+  .button {
+    font-family: "Staatliches", sans-serif;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    width: min-content;
+    height: min-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px 10px 20px;
+    background-color: #ffffff;
+    overflow: hidden;
+    position: relative;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+    border-radius: 7px;
+  }
+  
+  .find-jobs {
+    flex-shrink: 0;
+    width: auto;
+    height: auto;
+    white-space: pre;
+    overflow: visible;
+    position: relative;
+    font-weight: 700;
+    font-style: normal;
+    font-family: "Space Grotesk", "Space Grotesk Placeholder", sans-serif;
+    color: #023e8a;
+    font-size: 16px;
+    letter-spacing: 0em;
+    line-height: 1.5;
+    text-align: left;
+  }
+  

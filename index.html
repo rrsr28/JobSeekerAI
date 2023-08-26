@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Job Seeker</title>
+    <link rel="stylesheet" href="style.css"> <!-- Include your CSS file -->
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <style>
+        /* Apply the custom font to the heading */
+        .a-i-powered-job-nirvana {
+            text-align: center; /* Center align the heading */
+            font-family: "Staatliches", sans-serif; /* Apply the custom font */
+            color: #023e8a; /* Apply your desired color */
+            font-size: 36px; /* Adjust the font size */
+            padding-top: 50px; /* Add some top padding */
+        }
+
+        /* Apply styles to the form */
+        form {
+            text-align: center; /* Center align the form */
+            margin-top: 30px; /* Add top margin */
+        }
+
+        label {
+            font-size: 18px; /* Adjust the font size of the label */
+        }
+
+        input[type="text"] {
+            width: 100%; /* Make the input field full width */
+            padding: 10px; /* Add some padding */
+            font-size: 16px; /* Adjust the font size of the input field */
+        }
+
+        input[type="submit"] {
+            background-color: #023e8a; /* Apply your desired background color */
+            color: #ffffff; /* Apply text color */
+            padding: 10px 20px; /* Add padding */
+            font-size: 16px; /* Adjust font size */
+            border: none; /* Remove border */
+            cursor: pointer; /* Apply cursor style */
+            border-radius: 5px; /* Apply border radius */
+            margin-top: 10px; /* Add top margin */
+        }
+
+        /* Apply styles to the recommendations */
+        p {
+            margin-top: 20px; /* Add top margin to the recommendations */
+            text-align: left; /* Align recommendations to the right */
+            font-family: Arial, sans-serif; /* Apply font family */
+            font-size: 18px; /* Adjust font size */
+            color: #333; /* Apply text color */
+        }
+
+        /* Apply styles for the bullet points */
+        ul {
+            text-align: left; /* Align bullet points to the right */
+            padding-right: 20px; /* Add right padding to the list */
+            margin-top: 10px; /* Add top margin */
+        }
+
+        ul li {
+            margin-bottom: 5px; /* Add margin between bullet points */
+        }
+    </style>
+</head>
+<body>
+
+<h1 class="a-i-powered-job-nirvana">Job Recommendation System</h1>
+
+<form action="/" method="post">
+
+    <label for="skills">Enter your skills:</label><br>
+    <input type="text" id="skills" name="skills" value=""><br><br>
+
+    <input type="submit" value="Submit">
+
+</form>
+
+<p>{{ recommendations | safe }}</p>
+
+</body>
+</html>
